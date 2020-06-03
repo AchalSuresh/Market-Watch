@@ -1,0 +1,116 @@
+/*Set Background Image and font style*/
+body {
+  background-image: url("Media_Files/clouds.jpeg");
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    }
+
+
+@media only screen and ( min-width: 30em )
+{
+/*Style header elements*/
+h1,h2,h3,h4,h5 {
+  color: #2F4F4F;
+  margin-left: 20px;
+  text-decoration: underline;
+    } 	
+
+/*Class to make element bold*/
+.bold	{ 
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Verdana", Geneva, sans-serif;
+
+    }
+
+ .side  {
+          width: 40%;
+         }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+  }
+
+li {
+  float: left;
+  width: 25%  ;
+  }
+
+li a {
+  display: block;
+  text-decoration-color: #b4b4b4
+  color: #D3D3D3;
+  text-align: center;
+  padding: 14px 16px;
+  border: 1px solid #e7e7e7;
+  text-decoration: none;
+  }
+
+ li a.active {
+  background-color: #808080;
+  color: white;
+} 
+
+
+table.design, .design td, .design tr {
+  text-align: center;
+  border-collapse: collapse;
+  border:  1px solid green;
+  padding: 1px;
+  }
+
+th {
+  border: 1px solid green;
+  padding: 5px;	
+  }
+
+#header		{	
+  clear: both;
+	text-align: center;
+	padding: 1px;
+	width: 100%;
+	}
+
+#footer   {
+          background-color: #C0C0C0;
+          width: 100%;
+          text-align: center;
+          clear: both;
+          padding-left: 10px;
+                     } 
+
+#content  { 
+            float: left;
+            padding: 20px;
+            width: 30%;
+            height: 300px; /* only for demonstration, should be removed */
+            }
+#aside  {
+            float: left;
+            width: 50%;
+            height: 300px; /* only for demonstration, should be removed */
+            padding: 20px;
+         }
+
+
+
+#main  { 
+  clear: both;
+  text-align: center;
+  padding: 1px;
+  min-height: 100%;
+  width: 100%;
+  }
+
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+}

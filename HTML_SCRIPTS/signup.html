@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TheStockTracker</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<script type="text/javascript">
+			function respond() {
+			var var1 = form1.name.value;
+			var var2 = form1.lname.value;
+			var var3 = form1.email.value;
+			if (var1 == '' || var2 == '' || var3 == '') {
+				alert("Please fill all columns.");
+				return false;
+			}	
+			}	
+
+		</script>
+		<!-- The header Element-->
+		<div id="header">
+			<p>
+				<a href="index.html">
+				<img src="media/logo.png" alt="TheStocktracker" width = "700"  height="140" >
+				</a>
+			</p>
+			<ul>
+	  			<li><a href="index.html">Home</a></li>
+				<li><a href="tracker.html">Stock Tracker</a></li>
+				<li><a class="active" href="signup.html">Signup</a></li>
+				<li><a href="about.html">About Us</a></li>
+			</ul>
+			</p>
+		</div>
+			<div id="main">
+				<form id="form1" action="http://localhost/PHP_SCRIPTS/signup.php" method="post" onsubmit="respond()">
+			<p class="bold">Signup for Newsletter <br>
+				<input type="text" name="name" id="name" placeholder="Enter Your First Name"  size="25" /> <br><br>
+				<input type="text" name="lname" id="lname" placeholder="Enter Your Last Name"  size="25" /> <br><br>
+				<input type="text" name="email" id="email" placeholder="Enter Your Email Adress"  size="30" /><br><br>
+				<textarea name="comments" rows='5' cols='30' placeholder="Enter any suggestions you might have"></textarea> <br>
+
+
+				<input type="Submit" name="submit" value="Submit" >
+			</p>
+			</form>
+
+			</div>
+			<!-- The footer Element-->
+			<div id="footer">	
+				<table style="width: 80%;padding-top: 10px" >
+					<tr >
+						<td style="text-align:  left;width: 50%">
+							<img src="media/logo2.png" alt="Logo" width = "80"  height="80" ><br>
+							© 2011 The Stock Tracker<br>
+							By using this site you agree to the Terms of Use,<br> Privacy Notice and Cookie Notice.
+						</td>
+						<td text-align:center>
+				Contact Us <br> Ph:123-456-7890 <br> Email:stocks@TheStockTracker.com
+						</td>
+
+						<td style="text-align:right">
+				The Stock Tracker <br> 11 Wall Street <br> New York USA
+						</td>
+					</tr>
+				</table>
+				</p>
+			</div>
+		
+	</body>
+</html>
